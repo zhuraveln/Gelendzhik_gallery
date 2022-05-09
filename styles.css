@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.title h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 15px;
+}
+
+.title p {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #112138;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px 20px 0px;
+    margin: 0;
+    box-sizing: border-box
+}
+
+.slide {
+    height: 65vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    transition: all 600ms ease-in-out;
+}
+
+.slide h3 {
+    position: absolute;
+    font-size: 30px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    padding: 5px 15px 8px;
+    opacity: 0;
+    background-color: #112138c0;
+    border-radius: 20px;
+}
+
+.slide.active {
+    flex: 10;
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
